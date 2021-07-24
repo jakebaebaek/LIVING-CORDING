@@ -4,6 +4,8 @@
 <title> WEB1 - JavaScript</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
+<script src="colors.js"></script>
+
 <STYLE>
 span{
   padding-left:433px;
@@ -20,33 +22,10 @@ span{
       </ol>
       <div id="article">
           <h2>JavaScript</h2>
-            <span>
-              <input style = "width:70px;" type="button" value="night" onclick="
-              var target = document.querySelector('body');
-              if(this.value === 'night'){
-                target.style.backgroundColor = 'black';
-                target.style.color = 'white';
-                this.value = 'day'
-             } else {
-                target.style.backgroundColor = 'white';
-                target.style.color = 'black';
-                this.value = 'night'
-              }
-               ">
-            </span>
-            <input id=night_day style = "width:70px;" type="button" value="night" onclick="
-            if(document.querySelector('#night_day').value === 'night'){
-              document.querySelector('body').style.backgroundColor = 'black';
-              document.querySelector('body').style.color = 'white';
-              document.querySelector('#night_day').value = 'day'
-           } else {
-              document.querySelector('body').style.backgroundColor = 'white';
-              document.querySelector('body').style.color = 'black';
-              document.querySelector('#night_day').value = 'night'
-
-            }
-             ">
-          <p>
+          <input id="night_day" style = "width:70px;" type="button" value="night" onclick="
+          nightDayHandler(this);
+        ">
+              <p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/dPRtcRwKo-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </p>
           <p>
